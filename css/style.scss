@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Black+Ops+One&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 612px;
+    height: 792px;
+    background-color:#28221F;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+
+    .grid-circle {
+        position: absolute; 
+        z-index: 1;
+        .circle {
+            border: 1px solid #fff;
+            margin: 9px 0;
+            box-shadow: 14px 0 #fff, 28px 0 #fff, 42px 0 #fff, 56px 0 #fff,;
+        }
+    }
+
+
+    .name {
+        font-family: 'Squada One';
+        font-size: 32px;
+        color: #fff;
+        letter-spacing: 4%;
+    }
+
+    .triangle {
+        width: 0;
+        top: 0;
+        border-top: 40px solid #fff;
+        border-right: 70px solid transparent;
+    }
+
+    .title {
+        transform: rotate(-30deg);
+        position: absolute;
+        top: 38px;
+        left: 16px;
+
+        .major {
+            font-family: 'Squada One';
+            font-size: 15px;
+            color:#D79069;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+        }
+
+        .age {
+            font-family: 'Black Ops One';
+            color: #fff;
+            font-size: 22px;
+            font-weight: 400;
+            position: absolute;
+            right: 30px;
+            margin-top: 12px;
+        }
+    }
+
+    
+
+    .loc1 {
+        top: 40px;
+        left: 336px;
+    }
+
+    .loc2 {
+        top: 648px;
+        left: 156px;
+    }
+
+    .img {
+        position: absolute;
+        top: 67px;
+        left: 380px;
+
+        .avatar {
+            position: relative;
+            width: 153px;
+            height: 152px;
+            background-color: #E5E5E5;
+            border-radius: 100%;
+            z-index: 1000;
+
+        }
+
+        .list-contact {
+            position: absolute;
+            top: -50px;
+            left: 110px;
+            transform: rotate(-34deg);
+            z-index: 1;
+        
+            .contact {
+                width: 164px;
+                height: 21px;
+                background-color: #fff;
+                text-align: center;
+                font-family: 'Cute Font';
+                font-size: 16px;
+                font-weight: 400;
+                margin: 12px 0;
+            }
+        }
+    }
+
+    .infomation {
+        transform: rotate(-90deg);
+        position: absolute;
+        right: -40px;
+        top: 220px;
+    }
+
+    .workexperience {
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 248px;
+        top: 540px;
+    }
+
+    .about {
+        position: absolute;
+        top: 182px;
+        left: 140px;
+        z-index: 10;
+
+        .name {
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            margin-top: 12px;
+            width: 260px;
+            font-size: 14px;
+            line-height: 21px;
+            font-family: 'Armata';
+            color: #797373;
+        }
+
+    }
+
+    .skills {
+        position: absolute;
+        top: 400px;
+        left: 22px;
+
+        .skill {
+            border: 1px solid #D79069;
+            font-size: 25px;
+            color: #D79069;
+            font-family: 'Squada One';
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 32px 0;
+            
+        }
+
+    }
+
+    .works {
+        position: absolute;
+        left: 327px;
+        top: 445px;
+        right: 23px;
+    
+        .period {
+            font-family: 'Cute Font';
+            font-size: 20px;
+            color: #fff;
+        }
+
+        p {
+            margin: 12px 0;
+            font-family: 'Armata'; 
+            font-size: 14px;
+            color: #797373;
+        }
+    }
+
+    .rectangle {
+        width: 53px;
+        height: 5px;
+        background-color: #D79069;
+        position: absolute;
+    }
+
+    .rec1 {
+        top: 200px;
+        left: 73px;
+        transform: rotate(-90deg);
+    }
+
+    .rec2 {
+        top: 327.5px;
+        right: 90px;
+    }
+
+    .rec3 {
+        top: 600px;
+        left: 268.5px;
+        transform: rotate(90deg);
+    }
+    .triangle-bottom {
+        width: 50px;
+        height: 50px;
+        clip-path: polygon(0 100%, 100% 100%, 0 50%);
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title-shadow {
+        font-family: 'Squada One';
+        font-size: 32px;
+        color: #28221F;
+        text-shadow: 0 0 0.3px #fff;
+        letter-spacing: 0.05em;
+        position: absolute;
+    }
+
+    .sh1 {
+        top: 165px;
+        left: 210px;
+        z-index: 1;
+    }
+
+    .sh2 {
+        text-align: right;
+        top: 360px;
+        right: 20px;
+    }
+}
+
